@@ -1,0 +1,21 @@
+.container {
+    margin: 0;
+    padding: 2rem;
+}
+
+button {
+    color: #9d8189;
+    background-color:#f4acb7;
+    border: #9d8189 solid 1px;
+    font-size: 25px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.eachDish-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
