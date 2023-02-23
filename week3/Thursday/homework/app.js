@@ -6,7 +6,8 @@ const movieTitleInput = document.querySelector(".name")
 const movieYearInput = document.querySelector(".year")
 const movieURLInput = document.querySelector(".url")
 
-const enterBttn = document.querySelector('button')
+const enterBttn = document.querySelector('#enterBttn')
+const deleteBttn = document.querySelector('#deleteBttn')
 
 const displayMovie = () =>{
     const movieHTML = movies.Search.map(movie =>{
@@ -16,7 +17,7 @@ const displayMovie = () =>{
             <div class="card-body">
                 <h5 class="card-title">${movie.Title}</h5>
                 <p class="card-text">Year: ${movie.Year}</p>
-                <a href="#" class="btn btn-primary">Delete</a>
+                <button class="btn btn-primary" id="deleteBttn" onclick="deleteMovie('${movie.Title}')">Delete</button>
             </div>
          </div>
         `
@@ -30,11 +31,10 @@ displayMovie()
 let titleVal
 let yearVal
 let URLVal
-// movieTitleInput.addEventListener('change', function () {
-//     titleVal = movieTitleInput.value
-//     console.log(titleVal)
-// })
 
+
+
+//enter a new movie 
 let newMovie = {}
 
 enterBttn.addEventListener('click', function() {
@@ -54,10 +54,26 @@ enterBttn.addEventListener('click', function() {
     movies.Search.unshift(newMovie)
     console.log(movies.Search)
     displayMovie()
+    newMovie = {}
 })
 
+//delete a movie
 
+// if(deleteBttn !== null){
+//     deleteBttn.addEventListener('click', function() {
+//         console.log(deleteBttn.value)
+//     })
+// }else{
+//     console.log("delete is null")
+// }
 
+const deleteMovie = (movieTitle) => { 
+console.log(movieTitle)
+const newMovieArrayAfterDelete = movies.Search.filter((item)=> (item.Title !== movieTitle))
+console.log(newMovieArrayAfterDelete)
+movies.Search = newMovieArrayAfterDelete
+displayMovie()
+ }
 
 
 
