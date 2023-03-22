@@ -43,4 +43,8 @@ let exponentVal = Math.pow(6, 7)
 //10
 const pi = 3.14
 let roundedVal = Math.round(pi)
-console.log(roundedVal)
+// console.log(roundedVal)
+
+console.log("double", "hellohello\nhello")
+console.log("single", 'hellohello\nhello')
+

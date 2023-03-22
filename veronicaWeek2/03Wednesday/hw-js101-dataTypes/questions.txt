@@ -1,0 +1,66 @@
+1. What is string interpolation in JavaScript?
+
+string interpolation in js is a process in which an expression is inserted or placed in the string.
+To insert or embed this expression into the string a template literal is used. By using string interpolation in js, values like variables and mathematical expressions and calculations acan also be added. 
+
+Example:
+let num1 = 5
+let num2 = 6
+console.log(`The product of ${num1} and ${num2} is ${num1 + num2}`)
+
+
+
+2. What is the syntax for string interpolation in JavaScript?
+
+`string where interpolation should be done enclosed in backticks: expression`
+
+
+3. How does string interpolation differ from string concatenation?
+
+String interpolation does not need a + to concate two string, and it saves time, and it also allow dynamic code. 
+
+
+4. Can you use variables in string interpolation?
+Yes
+
+5. Can you use expressions in string interpolation?
+Yes
+
+6. What is the difference between single and double quotes when using string interpolation?
+
+
+The essential difference between the two literal forms of strings( single or double quotes) is that double quotes allow for escape sequences while single quotes do not.
+
+Example: 
+"\n" # will be interpreted as a new line
+'\n' # will just print out \n
+
+
+7. Can you use string interpolation with template literals?
+Yes, string interpolation is commonly used with template literals. In fact, string interpolation is one of the main features of template literals in many programming languages.
+
+In JavaScript, for example, template literals are enclosed in backticks (`) instead of single or double quotes, and string interpolation is performed using the ${expression} syntax. 
+
+
+8. How do you escape characters in string interpolation?
+The backslash is used to indicate that the character immediately following it should be treated as a literal character rather than a special character with a special meaning in the context of the string.
+
+For example, in JavaScript, if you want to include a double quote character (") inside a string that is enclosed in double quotes, you can escape the double quote character using a backslash like this:
+
+let message = "She said, \"Hello!\"";
+console.log(message);  => She said, "Hello!"
+
+
+9. Can you use string interpolation in older versions of JavaScript?
+It was introduced in ES6, any version before that won't be able to use template literals for string interpolation.
+
+10. How can you use string interpolation in a function or method?
+You can use string interpolation in a function or method by including the interpolated string expression inside the function or method body, using the ${expression} syntax.
+
+For example, here's a function in JavaScript that uses string interpolation to generate a greeting message:
+
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("Alice"));
