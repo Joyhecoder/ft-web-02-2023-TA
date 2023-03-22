@@ -1,3 +1,8 @@
+const prompt = require('prompt-sync')({sigint: true}) //need this for setup
+
+let firstName = prompt("what is your name?")
+console.log(firstName)
+
 const widthOfSquare = 10; //camel case 
 let pi = 3.14;  //let is a block scoped variable
 // console.log(pi)
@@ -77,9 +82,9 @@ let result3 = Math.pow(2,5)
 //true 1
 //false 0
 result = true + true
-console.log(result)
+// console.log(result)
 
 
 
 let ifValid = true
-console.log(typeof(ifValid))
+// console.log(typeof(ifValid))
