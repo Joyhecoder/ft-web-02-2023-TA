@@ -1,0 +1,14 @@
+{
+  "name": "js-lab-conditionals",
+  "version": "1.0.0",
+  "description": "In this homework assignment, you are going practice the basics of JavaScript as a programming language by completing problems that will challenge you knowledge of core princples.",
+  "main": "lab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
