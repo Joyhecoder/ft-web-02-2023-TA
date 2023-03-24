@@ -116,10 +116,23 @@ const prompt = require('prompt-sync')({sigint: true});
 // }
 
 //* 15. Write a loop that calculates the sum of the numbers from 1 to 100 and prints the result to the console.
-let num = 1
-let sum = 0
-while(num <= 100){
-  sum += num
-  num++
+// let num = 1
+// let sum = 0
+// while(num <= 100){
+//   sum += num
+//   num++
+// }
+// console.log(sum)
+
+
+
+
+//* 16. employee starts with an annual salary of 58 thousand dollars. Print out the employees salary each year for five years if the employee receives a 2.5% raise each year
+
+let initalSalary = 58000
+
+for(let year =1; year <= 5; year++){
+  initalSalary = initalSalary * 1.025
+  initalSalary = initalSalary.toFixed(2)
 }
-console.log(sum)
+console.log(initalSalary)
