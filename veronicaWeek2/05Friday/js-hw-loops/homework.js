@@ -79,16 +79,36 @@ const prompt = require('prompt-sync')({sigint: true});
 
 
 //* 10 Print a Box Given a height and width, input by the user, print a box consisting of * characters as its border.
-let width = Number(prompt("enter a width: "))
-let height = Number(prompt("enter a height: "))
+// let width = Number(prompt("enter a width: "))
+// let height = Number(prompt("enter a height: "))
 
-let topAndBottomSide = "*".repeat(width)
-let middle = "*" + " ".repeat(width-2) + "*"
+// let topAndBottomSide = "*".repeat(width)
+// let middle = "*" + " ".repeat(width-2) + "*"
 
-for(let i = 1; i <= height; i++){
-  if(i == 1 || i == height){
-    console.log(topAndBottomSide)
-  }else{
-    console.log(middle)
-  }
-}
+// for(let i = 1; i <= height; i++){
+//   if(i == 1 || i == height){
+//     console.log(topAndBottomSide)
+//   }else{
+//     console.log(middle)
+//   }
+// }
+
+
+//*11. Print a Triangle Print a triangle consisting of * characters like this:
+// let height = Number(prompt("enter a height for the tree: "))
+// let numOfStar = 1
+// for(let i = height -1; i >=0; i--){
+//   let layer = " ".repeat(i) + "*".repeat(numOfStar) + " ".repeat(i)
+//   console.log(layer)
+//   numOfStar+= 2
+// }
+
+
+//* 12. Multiplication Table Print the multiplication table for numbers from 1 up to 10. Example output:
+// for(let i = 1; i <= 10; i++){
+//   for(let j = 1; j <= 10; j++){
+//     let result = i * j
+//     console.log(`${i} x ${j} = ${result} `)
+//   }
+// }
+

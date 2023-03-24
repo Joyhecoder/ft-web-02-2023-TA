@@ -129,10 +129,26 @@ const prompt = require('prompt-sync')({sigint: true});
 
 //* 16. employee starts with an annual salary of 58 thousand dollars. Print out the employees salary each year for five years if the employee receives a 2.5% raise each year
 
-let initalSalary = 58000
+// let initalSalary = 58000
 
-for(let year =1; year <= 5; year++){
-  initalSalary = initalSalary * 1.025
-  initalSalary = initalSalary.toFixed(2)
+// for(let year =1; year <= 5; year++){
+//   initalSalary = initalSalary * 1.025
+//   initalSalary = initalSalary.toFixed(2)
+// }
+// console.log(initalSalary)
+
+
+//* 17. RPG
+let choice = Number(prompt("What do you want to do? 1. Fight goblin. 2. Do nothing. 3. Exit. Type in a number: "))
+while(choice !== 3){
+  if(choice == 1){
+    console.log("Fight goblin")
+  }else if(choice == 2){
+    console.log("You chose to do nothing")
+  }else{
+    console.log("Please enter a valid number")
+  }
+  choice = Number(prompt("What do you want to do? 1. Fight goblin. 2. Do nothing. 3. Exit. Type in a number: "))
+
 }
-console.log(initalSalary)
+console.log("Exit the game. See you later")
