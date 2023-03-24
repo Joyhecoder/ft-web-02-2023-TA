@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+
+    background-color: #808080;
+    padding-left: 10px;
+    padding-right: 70px;
+}
+
+.container{
+
+    padding: 20px;
+    width: 100%;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    color: white; 
+    font-size: 30px;
+
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

@@ -1,0 +1,52 @@
+/*
+The primary stylesheet for Flexbox Menu Demo web page. This sheet pulls in all the components in order of appearance.
+*/
+
+@import url('reset.css');
+@import url('accessibility.css');
+@import url('layout.css');
+@import url('typography.css');
+@import url('masthead.css');
+@import url('nav-base.css');
+@import url('nav-single-level.css');
+@import url('nav-advanced.css');
+@import url('nav-multi-level.css');
+@import url('nav-mixed.css');
+@import url('nav-social.css');
+
+
+/* single level menu */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* advanced menu */
+
+.container2 {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+.space {
+    margin-right: 10px;
+}
+
+span{
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.container3{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* a{
+    display: flex;
+} */

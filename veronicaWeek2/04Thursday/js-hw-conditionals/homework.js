@@ -4,6 +4,37 @@ const prompt = require('prompt-sync')({sigint: true});
 
 //* 1. Write a script that asks for a day of the week. If the day is a business day, print 'go to work!'. If the day is a weekend day, print 'sleep in!'. If whatever the user entered is not a day, print 'enter a valid day'.
 
+// let day = prompt("Enter a day: ")
+// day = day.toLowerCase()
+// switch (day) {
+//     case "monday":
+//         console.log("go to work!")
+//         break;
+//     case "tuesday":
+//         console.log("go to work!")
+//         break;
+//     case "wednesday":
+//         console.log("go to work!")
+//         break;
+//     case "thursday":
+//         console.log("go to work!")
+//         break;
+//     case "friday":
+//         console.log("go to work!")
+//         break;
+//     case "saturday":
+//         console.log("sleep in!")
+//         break;
+//     case "sunday":
+//         console.log("sleep in!")
+//         break;
+
+//     default:
+//         console.log("please enter a valid day")
+       
+// }
+
+
 // let day = Number(prompt("Please enter a number for a day. 1-Monday, 2-Tuesday, ...., 7-Sunday"))
 // switch (day) {
 //     case 1:

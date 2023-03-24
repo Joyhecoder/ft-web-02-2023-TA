@@ -1,0 +1,19 @@
+.vendors {
+  margin: 4rem;
+}
+
+.vendor-list {
+  margin: 2em 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.vendor-list img {
+  box-sizing: border-box;
+  width: 130px;
+  padding: 10px;
+}
