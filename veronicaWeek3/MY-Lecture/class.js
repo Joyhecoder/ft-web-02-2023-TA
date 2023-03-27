@@ -9,4 +9,8 @@ myArr.push(100)
 
 //add item to the beginning of an array
 myArr.unshift(0)
-console.log(myArr)
+// console.log(myArr)
+
+
+
+

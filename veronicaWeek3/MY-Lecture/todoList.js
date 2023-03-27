@@ -34,27 +34,6 @@ const choiceFunction = () => {
     
 
 //* steps: 
-    choiceFunction()
-    while(choice !=5){
-        if(choice ==1){
-            addItem()
-        }else if(choice ==2){
-            displayTodo()
-        }else if(choice ==3){
-            updateItem()
-        }else if(choice == 4){
-            removeItem()
-        }else{
-            console.log("Please enter a valid number")
-            
-        }
-        choiceFunction()
-    }
-    if(choice == 5){
-        console.log("bye")
-    }
- 
-
 
 
 //1. prompt our user to make a choice
@@ -80,3 +59,52 @@ const choiceFunction = () => {
  
 
      //?4. end program
+
+    choiceFunction()
+    while(choice !=5){
+        if(choice ==1){
+            addItem()
+        }else if(choice ==2){
+            displayTodo()
+        }else if(choice ==3){
+            updateItem()
+        }else if(choice == 4){
+            removeItem()
+        }else{
+            console.log("Please enter a valid number")
+            
+        }
+        choiceFunction()
+    }
+    if(choice == 5){
+        console.log("bye")
+    }
+ 
+
+
+
+
+
+
+
+    //switch case method
+
+    let menuChoice = 0;
+    let quit = 4
+    while(menuChoice != quit){
+        menuChoice = Number(prompt(`
+        Select a menu item:
+        1. Add a todo list item
+        2. Update a todo list item
+        3. Remove a todo list item
+        4. Quit`))
+
+        switch (menuChoice) {
+            case 1: //add an item
+                
+                break;
+        
+            default:
+                break;
+        }
+    }
