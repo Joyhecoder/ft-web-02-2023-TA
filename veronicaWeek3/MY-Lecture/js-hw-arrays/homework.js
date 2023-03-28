@@ -215,4 +215,23 @@ for(let i = 0; i <wordArr.length; i++){
         longVowelArr.push(wordArr[i])
     }
 }
-console.log(longVowelArr.join(""))
+// console.log(longVowelArr.join(""))
+
+
+//* 17
+const str1 = "lbh zhfg hayrnea jung lbh unir yrnearq"
+const alphabets =['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'," ", "-", "_", ".", "&","?", "!", "@", "#", "/"];
+
+const alphabets13 = ['N','O','P','Q','R','S','T','U','V','W','X','Y','Z','A','B','C','D','E','F','G','H','I','J','K','L','M', " ", "-", "_", ".", "&","?", "!", "@", "#", "/"];
+const str1Arr = str1.split("")
+let resultArr17 = []
+for(let i=0; i < str1Arr.length; i++){
+    for(let j =0; j < alphabets.length; j++){
+        if(str1[i].toLocaleUpperCase() === alphabets[j]){
+            resultArr17.push(alphabets13[j])
+         
+        }
+    }
+}
+const decodingAnswer = resultArr17.join("")
+console.log(decodingAnswer)
