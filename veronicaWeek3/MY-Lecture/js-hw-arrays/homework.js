@@ -158,6 +158,35 @@ for(let num of numArr){
 // console.log(dedupArr)
 
 
+//method 2:
+
+let dupNums = [9, 8, 6, 9, 8, 6, 1, 2, 3, 1, 1, 4, 5, 6]
+
+let sortedNums = dupNums.sort()
+
+let noDupNums = [sortedNums[0]] // [1, 2, 3, 4, 5, 6]
+
+
+// [ 1, 1,  2, 3, 4, 5, 6, 6, 6, 8, 8, 9, 9] 
+
+//                         c 
+
+//      n
+
+// console.log(noDupNums);
+
+
+for(let c = 0; c <  sortedNums.length - 1; c++){  
+
+    // let n = c + 1 //next pointer
+
+    if(noDupNums[noDupNums.length -1] !=  sortedNums[c]) {  // 6 != 6
+        noDupNums.push(sortedNums[c])
+    }
+}
+
+// console.log(noDupNums)
+
 //* 15. Leetspeak
 let str = "I am a leet programmer"
 let strToArr = str.split("")
@@ -234,4 +263,45 @@ for(let i=0; i < str1Arr.length; i++){
     }
 }
 const decodingAnswer = resultArr17.join("")
-console.log(decodingAnswer)
+// console.log(decodingAnswer)
+
+
+
+//* 18 reverse numbers 
+//* -100453 => -354001
+
+function reverseNum(num){
+    let answerArr = []
+    let numArr = num.split("")
+    if(numArr[0] == "-"){
+        answerArr.push("-")
+        for(let i = numArr.length -1 ; i >0; i--){
+            answerArr.push(numArr[i])
+        }
+    }else{
+        for(let int of numArr){
+            answerArr.unshift(int)
+        }
+    }
+    let answer = answerArr.join("")
+    console.log(answer)
+}
+reverseNum("123")
+reverseNum("-5123")
+
+//method 2
+let num = -100453
+let sign = 1
+if(num < 0){
+    sign = -1
+}
+let numAbs = Math.abs(num)
+let numsAbsStr = numAbs.toString()
+let revNumAbsStr = ""
+
+for(let i = 0; i < numsAbsStr.length; i++){
+    revNumAbsStr = numsAbsStr[i] + revNumAbsStr
+}
+
+let revNum = Number(revNumAbsStr) * sign
+console.log(revNum)
