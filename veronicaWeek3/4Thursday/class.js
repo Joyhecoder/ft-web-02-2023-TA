@@ -67,4 +67,16 @@ let students = {
 
 //?add a new key in obj
 students.state = "TX"
-console.log(students)
+// console.log(students)
+
+
+let contacts = {
+    Hunter: {
+        workNumber: '333-333-3333',
+        cellNumber: '222-222-2222'
+    },
+    Kelly: {
+        workNumber: '444-333-3333',
+        cellNumber: '444-222-2222'
+    },
+}
