@@ -2,7 +2,7 @@
 
 var index = 0
 for (index = 0; index <= 10; index++) {
-    console.log(index)
+    // console.log(index)
     
 }
 // console.log("outside", index)
@@ -54,3 +54,17 @@ function recursiveRange(num){
 //recursiveRange(2) => 2 + recursiveRange(1) = 2 + 1 = 3
 //recursiveRange(1) => 1 + recursiveRange(0) = 1 + 0 = 1
 //recursiveRange(0) => 0 
+
+
+//object lesson
+
+let students = {
+    fName: "Kelly",
+    city: "Houston"
+}
+// console.log(students["fName"])
+// console.log(students.fName)
+
+//?add a new key in obj
+students.state = "TX"
+console.log(students)
