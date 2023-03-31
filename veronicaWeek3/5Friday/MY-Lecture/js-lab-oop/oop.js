@@ -27,11 +27,11 @@ let s5 = new Student("Hunter")
 //* Call the greet method on each of the students in #2 passing in a different name argument each time.
 //* Since the method is returning a string, how would you output the result to your terminal?
 
-console.log(s1.greeting("Veronica"))
-console.log(s2.greeting("Veronica"))
-console.log(s3.greeting("Veronica"))
-console.log(s4.greeting("Veronica"))
-console.log(s5.greeting("Veronica"))
+// console.log(s1.greeting("Veronica"))
+// console.log(s2.greeting("Veronica"))
+// console.log(s3.greeting("Veronica"))
+// console.log(s4.greeting("Veronica"))
+// console.log(s5.greeting("Veronica"))
 
 
 
@@ -48,3 +48,76 @@ console.log(s5.greeting("Veronica"))
 //* Create an instance variable for name.
 //* The instance variables now require that you pass in a name when created. Refactor your object instances in #2 by passing in a name to each instance.
 //* Refactor the print statement in your constructor like and run your program.
+
+
+
+
+
+//!Inheritance 
+//* Car Class
+//* Create a new class called Car with the following method :
+class Car{
+    constructor(make, model, color){
+        this.make = make
+        this.model = model
+        this.color = color
+    }
+    carDetails(){
+        console.log(`
+        Here are details of this car:
+        Make: ${this.make},
+        Model: ${this.model},
+        color: ${this.color}`)
+    }
+}
+
+class Hybrid extends Car {
+    constructor(make, model, color, mpg){
+        super(make, model, color)
+        this.mpg = mpg
+    }
+    carDetails(){
+        super.carDetails()
+        console.log(`Mile per gallon: ${this.mpg}`)
+    }
+    carType(){
+        console.log("I am a hybrid car")
+    }
+}
+
+class Electric extends Car {
+    constructor(make, model, color){
+        super(make, model, color)
+      
+    }
+    carType(){
+        console.log("I am an electric car")
+    }
+}
+
+
+//* Using Inheritance
+//* Create a Hybrid instance and an Electric instance
+
+let prius = new Hybrid("Toyota", "S", "Red", "55mpg")
+let tesla = new Electric("Tesla", "model S", "Teal")
+
+
+
+//* Call the method CarType on the Hybrid Instance and Electric Instance
+prius.carType()
+tesla.carType()
+
+
+//* Call the method Car Details on each instance
+prius.carDetails()
+tesla.carDetails()
+
+
+
+//*Add the following instance variables to the Car class :
+
+// make
+// model
+// color
+

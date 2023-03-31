@@ -26,8 +26,8 @@
 
 
  //* initiates an object
- let jordan = new Student("Jordan", "Nashville") //jordan is object, jordan is an instance of the class Student
- let kelly = new Student("Kelly", "Houston")
+//  let jordan = new Student("Jordan", "Nashville") //jordan is object, jordan is an instance of the class Student
+//  let kelly = new Student("Kelly", "Houston")
 // jordan.greeting()
 
 // console.log(jordan)
@@ -67,3 +67,57 @@ let person = new Person(
 )
 
 // console.log(person.age())
+
+
+
+//?inheritance 
+
+class Animal{
+    constructor(){
+        console.log("This is my parent class")
+    }
+}
+
+class Dog extends Animal{
+    woof(){
+        console.log("woof")
+    }
+}
+
+class Cat extends Animal{
+    meow(){
+        console.log("meow")
+    }
+}
+
+// let fido = new Dog()
+// let boba = new Cat()
+
+
+
+
+class WillSmith{
+    constructor(){
+        console.log("this is will smith's constructor")
+    }
+    acting(){
+        console.log("Will Smitch kinda knows how to act")
+    }
+ }
+
+ class JaydenSmith extends WillSmith{
+    constructor(){
+        super()
+        console.log("this is jayden constructor")
+    }
+    acting(){
+        super.acting()
+        console.log("Jayden Smitch kinda knows how to act")
+    }
+ }
+
+ let dad = new WillSmith()
+//  dad.acting()
+
+ let son = new JaydenSmith()
+ son.acting()
