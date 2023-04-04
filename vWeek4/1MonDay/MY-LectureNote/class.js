@@ -1,4 +1,4 @@
-// campus student
+//! campus student
 
 class Student {
     constructor(firstName, city){
@@ -111,6 +111,10 @@ class Bank{
 
 }
 
+
+
+//!bank account practice 
+
 let wellsFargo = new Bank("Wells Fargo", "123 Houston St")
 
 //*add an account holder
@@ -119,17 +123,50 @@ wellsFargo.addAccountHolder('Veronica', 1230)
 
 
 //*search by name
-wellsFargo.searchByName('Joy')
+// wellsFargo.searchByName('Joy')
 // console.log(wellsFargo)
 
 
 //*total bank balance
-wellsFargo.totalBankBalance()
+// wellsFargo.totalBankBalance()
 
 
 //*see all of our members
-wellsFargo.allMembers()
+// wellsFargo.allMembers()
 
 
 //*highest account holder 
-wellsFargo.highestAccount()
+// wellsFargo.highestAccount()
+
+
+//! find two numbers that add up equal to the target
+function twoSum(arr, targetSum){
+    let cache = {}
+    let results = []
+
+    for(let val of arr){
+        cache[val] = val
+    }
+    // console.log(cache)
+
+    for(let i = 0; i < arr.length -1; i++){
+        //x = targetSum - y
+        let y = arr[i]
+        let x = targetSum - y
+
+        if(cache[x] === x && x != arr[i]){
+            results.push(arr[i])
+        }
+    }
+    return results
+}
+
+let example = twoSum([3, 5, -4, 8, 11, 1, -1, 6], 10)
+console.log(example)
+
+
+//! arrow function
+const add = (num1, num2) => { 
+    return num1 + num2
+
+ }
