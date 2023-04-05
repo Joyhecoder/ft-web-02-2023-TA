@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script src="js/data.js"></script>
+    <script>
+        console.log(data)
+
+        let body = document.querySelector('body')
+        let div = document.createElement('div')
+        div.setAttribute('class', 'container')
+        body.append(div)
+        for(let item of data){
+            let cardHTML = 
+            `
+
+            <div class="col-4" style="margin-top: 15px">
+                <div class="card">
+                    <div class="card-header">
+                      State Name : ${item.state}
+                    </div>
+                    <div class="card-body">
+                     <p>Cases: ${item.cases} </p>
+                     <p>Deaths: ${item.deaths} </p>
+                      
+                    </div>
+                  </div>
+            </div>
+        `
+        div.innerHTML += cardHTML
+        }
+       
+        var card = `
+
+        <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                      State Name : 
+                    </div>
+                    <div class="card-body">
+                     <p>Cases: </p>
+                     <p>Deaths: </p>
+                      
+                    </div>
+                  </div>
+            </div>
+        `
+    </script>
+</body>
+</html>
