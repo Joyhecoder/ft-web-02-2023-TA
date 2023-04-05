@@ -5,21 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .dc{
+            background-color: tomato;
+        }
+    </style>
 </head>
 <body>
     <div id="learningDOM">
         <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-            <li>four</li>
-            <li>five</li>
+            <li class="dc">one</li>
+            <li class="dc">two</li>
+            <li class="dc">three</li>
+            <li class="dc">four</li>
+            <li class="dc">five</li>
         </ul>
     </div>
 
+    <span class="dc">This is a span tag</span>
+    <span class="dc">This is a span tag</span>
+    <span class="dc">This is a span tag</span>
+    <span class="dc">This is a span tag</span>
+    <span class="dcd">This is a span tag</span>
+
     <script>
-        let div = document.getElementById("learningDOM")
-        console.log(div)
+        // let div = document.getElementById("learningDOM")
+        // console.log(div)
+
+        // let liTags = document.getElementsByClassName("dc")
+        // console.log(liTags)
+
+        // let spanTags = document.getElementsByTagName("span")
+        // console.log(spanTags)
+
+        //get textContent 
+        let spanTagNodeList = document.getElementsByTagName('span')
+        console.log(spanTagNodeList[0].textContent)
+        spanTagNodeList[0].textContent = "changed the text"
+        for(let spanTag of spanTagNodeList){
+            // spanTag.textContent = "loop and changed the text"
+            spanTag.innerHTML = "<h1>This is H1</h1>"
+        }
+
+        //innerHTML apply html
+
+
+        let ul = document.querySelector("ul")
+        console.log(ul)
+
+        let li = document.querySelector("li")
+        console.log(li)
+
+        let liList = document.querySelectorAll("li")
+        console.log(liList)
+
+        let dc = document.querySelectorAll("span.dc")
+        console.log(dc)
     </script>
 </body>
 </html>
