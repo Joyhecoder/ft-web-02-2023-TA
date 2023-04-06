@@ -37,16 +37,18 @@ for(let company of companies){
 
 let newAge = ages.map(age=>age+5)
 // console.log(newAge)
+// console.log("original", ages)
 
 
 
 //* 6. Map through the companies array and return a new companies array where the end date is 2020 for each company.
 let newCompanies = companies.map(company =>{
-  
-  company.end = 2020
-  return company
+  let newCompanyObj = {...company}
+   newCompanyObj.end = 2020
+  return newCompanyObj
 })
 // console.log(newCompanies)
+// console.log("original", companies)
 
 
 //* 7. Filter all even numbers in the ages array
@@ -65,9 +67,10 @@ let ageSmallerThan35 = ages.filter(age =>{
 
 //* 9. Filter out all companies with a start date that is greater than 1990
 let companiesStatedAfter1990 = companies.filter(company => {
-  return company.start > 1990
+  return company.start < 1990
 })
-console.log(companiesStatedAfter1990)
+// console.log(companiesStatedAfter1990)
 
 
 //* 10. Is there at least one value in the ages array that is equal to 21?
+// let agesEual21 = 

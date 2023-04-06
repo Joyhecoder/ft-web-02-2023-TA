@@ -42,4 +42,8 @@ let result2 = calc(5,6, subtract)
 
 
 
-
+let arr = [ 4, 5, 6, 7, 8]
+let newArr = arr.filter((num) => { 
+    return num > 5
+ })
+ console.log(newArr)
