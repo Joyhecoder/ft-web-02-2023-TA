@@ -73,4 +73,16 @@ let companiesStatedAfter1990 = companies.filter(company => {
 
 
 //* 10. Is there at least one value in the ages array that is equal to 21?
-// let agesEual21 = 
+let agesEual21 = ages.some(age => age=21)
+// console.log(agesEual21)
+
+
+//* 11. Are there values in the ages array that are less than 14?
+let lessThan14 = ages.some(age => age <14)
+// console.log(lessThan14)
+
+//* 12. Are there companies in the company list that started prior to 1990?
+let startedBefore1990 = companies.some(company => {
+  return company.start < 1990
+})
+console.log(startedBefore1990)

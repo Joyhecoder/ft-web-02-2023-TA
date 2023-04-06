@@ -46,4 +46,11 @@ let arr = [ 4, 5, 6, 7, 8]
 let newArr = arr.filter((num) => { 
     return num > 5
  })
- console.log(newArr)
+//  console.log(newArr)
+
+
+//! array.some()
+let answer = arr.some(val =>{
+    return val > 10
+})
+console.log(answer)
