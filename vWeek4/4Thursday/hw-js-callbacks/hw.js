@@ -144,5 +144,58 @@ const findSum = (arr) => {
     const acronymFunc = array.reduce((total, curLetter) => total.concat(curLetter[0]), initialLetter)
     return acronymFunc.toUpperCase()
   }
-  console.log(acronym(['very', 'important', 'person']))
-  console.log(acronym(['national', 'aeronautics', 'space', 'administration']))
+//   console.log(acronym(['very', 'important', 'person']))
+//   console.log(acronym(['national', 'aeronautics', 'space', 'administration']))
+
+
+
+  //* Extra practice for reduce()
+// Create a function sumPlusMinus() that takes an array and sums 
+// separately positive and negative numbers
+
+// it should return an object like this:
+
+// {
+//     plus: 74, // sum of all positive numbers
+//     minus: -54 // sum of all negative numbers
+// }
+
+const sumPlusMinus = (arr) => { 
+    //seperate positive and negative
+    let allPositive = []
+    let allNegative = []
+    arr.map(val=>{
+        if(val>0){
+            allPositive.push(val)
+        }else{
+            allNegative.push(val)
+        }
+    })
+
+    let result = {}
+
+    let sumOfPositives = findSum2(allPositive)
+    let sumOfNegatives = findSum2(allNegative)
+    result["Plus"] = sumOfPositives
+    result["Minus"] = sumOfNegatives
+    return result
+ }
+
+const findSum2 = (arr) => arr.reduce((total, cur)=> total + cur, 0)
+
+console.log(sumPlusMinus([1, -3, 2, -4]))
+console.log(sumPlusMinus([1, -3, 2, -4, 12, -20]))
+
+//!very concise solution
+//* veronica's solution
+const plusMinus = arr => { 
+    return arr.reduce((prev, curr)=>{
+        return {
+            plus: curr > 0 ? prev.plus + curr : prev.plus,
+            minus: curr < 0 ? prev.minus + curr : prev.minus
+        }
+
+    }, {plus: 0, minus: 0})
+ }
+
+ console.log(plusMinus([1, -3, 2, -4, 12, -20]))
