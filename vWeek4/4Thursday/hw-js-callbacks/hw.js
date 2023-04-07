@@ -183,8 +183,8 @@ const sumPlusMinus = (arr) => {
 
 const findSum2 = (arr) => arr.reduce((total, cur)=> total + cur, 0)
 
-console.log(sumPlusMinus([1, -3, 2, -4]))
-console.log(sumPlusMinus([1, -3, 2, -4, 12, -20]))
+// console.log(sumPlusMinus([1, -3, 2, -4]))
+// console.log(sumPlusMinus([1, -3, 2, -4, 12, -20]))
 
 //!very concise solution
 //* veronica's solution
@@ -198,4 +198,37 @@ const plusMinus = arr => {
     }, {plus: 0, minus: 0})
  }
 
- console.log(plusMinus([1, -3, 2, -4, 12, -20]))
+//  console.log(plusMinus([1, -3, 2, -4, 12, -20]))
+
+
+//* reduce method to find the max num
+ const numbers = [10, 30, 20, 40, 10]
+ const findMax = (arr) => { 
+    return arr.reduce((pre, cur)=>{
+        if(cur > pre){
+            return cur
+        }else {
+            return pre
+        }
+    }, arr[0])
+  }
+
+//   console.log(findMax(numbers))
+
+
+//* given an array of elements, count the number of times a specific element occurs
+
+const fruits = ['apple', 'banana', 'orange', 'apple', 'orange', 'apple'];
+
+const findTimes = (arr) => { 
+    return arr.reduce((pre, cur)=>{
+        if(pre[cur]){
+            pre[cur]++
+        }else{
+            pre[cur]=1
+        }
+        return pre
+    }, {})
+ }
+
+ console.log(findTimes(fruits))
