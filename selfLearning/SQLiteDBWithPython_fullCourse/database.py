@@ -54,12 +54,51 @@ many_customers = [('Wes', 'Brown', 'wes@me.com'),
 
 
 #* update records
-c.execute("""UPDATE customers SET first_name = 'John'
-          WHERE rowid = 1
+# c.execute("""UPDATE customers SET first_name = 'John'
+#           WHERE rowid = 1
           
-          """)
+#           """)
 
-c.execute("SELECT rowid, * FROM customers")
+# c.execute("SELECT rowid, * FROM customers")
+# items = c.fetchall()
+# for item in items:
+#     print(item)
+
+
+
+#* delete records
+# c.execute("DELETE FROM customers WHERE first_name = 'Joy'")
+
+# c.execute("SELECT rowid, * FROM customers")
+# items = c.fetchall()
+# for item in items:
+#     print(item)
+
+
+
+#* order records
+# c.execute("SELECT rowid, * FROM customers ORDER BY first_name DESC")
+
+
+
+#* and / or
+#?AND:
+# c.execute("SELECT rowid, * FROM customers WHERE last_name LIKE 'El%' AND first_name LIKE '%hn'")
+
+#?OR:
+# c.execute("SELECT rowid, * FROM customers WHERE last_name = 'Elder' OR first_name LIKE 'St%'")
+
+
+
+
+#* limiting
+# c.execute("SELECT rowid, * FROM customers WHERE last_name = 'Elder' ORDER BY first_name LIMIT 2")
+
+
+#* drop table
+# c.execute("DROP TABLE customers")
+
+
 items = c.fetchall()
 for item in items:
     print(item)
