@@ -30,10 +30,30 @@ many_customers = [('Wes', 'Brown', 'wes@me.com'),
 
 
 #*query the db
-c.execute("SELECT * FROM customers")
+# c.execute("SELECT * FROM customers")
+
+#* query the db table with a primary key
+c.execute("SELECT rowid, * FROM customers WHERE last_name LIKE 'Br%' ")
 # print(c.fetchone())              #?fetch the first item in the table
 # print(c.fetchmany(3))            #?fetch however many
 # print(c.fetchall())              #?fetch all
+
+
+#*query each element in a row
+items = c.fetchall()
+
+# print("NAME" + "\t\t  EMAIL")
+# print("-----" + "\t\t  -----")
+# for item in items:
+#     print(item[0] + " " + item[1] + " \t " + item[2])
+
+
+for item in items:
+    print(item)
+
+
+
+
 
 
 #* commit our command 
