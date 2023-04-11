@@ -47,14 +47,41 @@ patient_list = [
 
 
 #! inner join
-c.execute("""SELECT appointments.appt_id, patients.name, patients.city FROM
-          appointments
-          INNER JOIN
-          patients
-          ON
-          appointments.pat_id = patients.pat_id""")
-inner_join_items = c.fetchall()
-print(inner_join_items)
+# c.execute("""SELECT appointments.appt_id, patients.name, patients.city FROM
+#           appointments
+#           INNER JOIN
+#           patients
+#           ON
+#           appointments.pat_id = patients.pat_id""")
+# inner_join_items = c.fetchall()
+# print(inner_join_items)
 
+
+#! left join
+# c.execute("""SELECT appointments.appt_id, patients.name, patients.city FROM
+#           appointments
+#           LEFT JOIN
+#           patients
+#           ON
+#           appointments.pat_id = patients.pat_id""")
+# left_join_items = c.fetchall()
+# for item in left_join_items:
+#     print(item)
+
+#! right join
+c.execute("""SELECT appointments.appt_id as appointment, patients.name, patients.city FROM
+           patients
+          LEFT JOIN
+          appointments 
+         
+          ON
+          appointments.pat_id = patients.pat_id
+          GROUP BY
+          appointments.appt_id""")
+right_join_items = c.fetchall()
+for item in right_join_items:
+    print(item)
+    
+    
 connection.commit()
 connection.close()
