@@ -81,4 +81,22 @@ def delete_one(id):
     connection.commit()
     connection.close()
     
+#* Where clause
+def email_lookup(email):
+    #connect to db and create a cursor
+    connection = sqlite3.connect("customer2.db")
+    c = connection.cursor()
     
+    #find the record first
+    #? Method 1:
+    # c.execute("SELECT * FROM customers WHERE email = (?)", (email,))
+    #? Method 2: 
+    c.execute("SELECT * FROM customers WHERE email = :c", {"c": "bbq@me.com"})
+    items = c.fetchall()
+    for item in items:
+        print(item)
+    
+    
+    #commit our command and close the connection
+    connection.commit()
+    connection.close()
