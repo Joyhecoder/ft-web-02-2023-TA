@@ -97,8 +97,8 @@ const person = (obj) => {
 //     console.log(n, c, a, p);
 // }
 
-person(person1)
-person(person2)
+// person(person1)
+// person(person2)
 
 
 /**
@@ -106,16 +106,17 @@ person(person2)
  */
 
  function go(options) {
-    // let {speed = 4,
-    //      enable: {hyperdrive = false,
-    //               frobnifier = true}} = options
+    let {speed = 4,
+         enable:  {hyperdrive = false,
+                  frobnifier = true} = {}} = options
 
 
                   
-    // console.log("speed=", speed,
-                // "hyperdrive:", hyperdrive,
-                // "frobnifier:", frobnifier)
+    console.log("speed=", speed,
+                "hyperdrive:", hyperdrive,
+                "frobnifier:", frobnifier)
   }
   
   go({speed: 5})
+  go({enable: {hyperdrive: true, frobnifier: true}})
 
