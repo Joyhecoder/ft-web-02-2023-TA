@@ -23,3 +23,29 @@ let age = 26
 
 let beverage = age >= 21 ? "Beer" : "Juice"
 // console.log(beverage)
+
+
+let arr = [1, 2, 3, 4, 5]
+let arr2 = [23, 34, 25]
+
+const logArguments = (...args) => {
+    console.log(args)
+    args[0].forEach(val => {
+        console.log(val)
+    })
+    args[1].forEach(val => {
+        console.log(val)
+    })
+    
+}
+
+logArguments(arr, arr2)
+
+
+const names = (...args) => {
+    for(name of args){
+        console.log(name)
+    }
+}
+
+names("Joy", "Katie", "Kelly")
