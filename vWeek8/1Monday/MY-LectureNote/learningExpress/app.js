@@ -116,6 +116,38 @@ app.get('/dogs/:id', (req, res) => {
     `)
  })
 
+
+
+ //localhost:3000/calculator/6/34/add
+ app.get("/calculator/:num1/:num2/:operator", (req, res) => { 
+    let {num1, num2, operator} = req.params
+    int1 = Number(num1)
+    int2 = Number(num2)
+    let answer
+    switch (operator) {
+        case "add":
+            answer = int1 + int2
+            break;
+    
+        case "subtract":
+            answer = int1 - int2
+            break;
+    
+        case "multiply":
+            answer = int1 * int2
+            console.log("anser", answer)
+            break;
+    
+        case "divide":
+            answer = int1 / int2
+            break;
+    
+        default:
+            break;
+    }
+    res.send(answer.toString())
+  })
+
 // app.listen(port, cb)
 app.listen(PORT, ()=>{
     console.log(`Listening on port: ${PORT}`)
