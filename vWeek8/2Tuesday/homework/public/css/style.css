@@ -1,0 +1,48 @@
+:root {
+    --lg-color-purple: #e2d5f1;
+    --lg-color-blue: #c9e8fd;
+    --main-purple: #b8acd1;
+    --dark-blue: #526d85;
+    --dark-purple: #4e4466;
+
+    font-family: 'Carlito', sans-serif;
+
+}
+
+body {
+    margin: 0px;
+    font-family: 'Carlito', sans-serif;
+    
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.btnStyle {
+    border: 2px solid var(--lg-color-blue);
+    color: var(--lg-color-blue);
+}
+
+/* index.ejs */
+.picture-section {
+    position: relative;    
+}
+#word {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 20vh;
+    left: 10px; 
+     
+    padding: 5px;
+    background-color: rgb(78, 68, 102, .6);
+    
+    border: 5px solid var(--lg-color-blue);
+    color: var(--lg-color-blue);
+    width: 40vw;
+    height: 20vh;
+}

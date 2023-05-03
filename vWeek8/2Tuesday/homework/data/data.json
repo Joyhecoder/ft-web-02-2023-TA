@@ -1,0 +1,83 @@
+{
+    "albums": [{
+        "name": "Taylor Swift",
+        "shortname": "taylorswift",
+        "albumname" : "Taylor Swift (Debut Album)",
+        "summary" : "Taylor Swift is the debut studio album by American singer-songwriter Taylor Swift, released on October 24, 2006, by Big Machine Records. Swift was 16 years old at the time of the album's release and wrote its songs during her freshman year of high school. Swift has writing credits on all of the album's songs, including those co-written with Liz Rose. Swift experimented with several producers, ultimately choosing Nathan Chapman, who had produced her demo album. Musically, the album is country music styled, and lyrically it speaks of romantic relationships, a couple of which Swift wrote from observing relationships before being in one. Lyrics also touch on Swift's personal struggles in high school.",
+        "artwork": ["taylorswift_ts.png"],
+        "albumAM": "https://itunes.apple.com/us/album/taylor-swift-bonus-track-version/275621626",
+        "albumSM": "https://open.spotify.com/album/7mzrIsaAjnXihW3InKjlC3"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "fearless",
+        "albumname" : "Fearless",
+        "summary": "Fearless is the second studio album by the American singer-songwriter Taylor Swift. The album was released on November 11, 2008, by Big Machine Records. Fearless was an international breakthrough and huge commercial success for Swift. It debuted at No. 1 in the United States, and later became the best-selling album of 2009, selling over 3.2 million copies. It gave Swift, 18 at the time, the distinction of being the youngest artist in history to have the year's best-selling album. It has sold over 7 million copies in the United States.",
+        "artwork": ["fearles_ts.png"],
+        "albumAM": "https://itunes.apple.com/us/album/fearless/295757174",
+        "albumSM": "https://open.spotify.com/album/2dqn5yOQWdyGwOpOIi9O4x"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "speaknow",
+        "albumname" : "Speak Now",
+        "summary": "Speak Now is the third studio album by American singer-songwriter Taylor Swift. It was released on October 25, 2010, by Big Machine Records. Production for the album took place during 2009 to 2010 at several recording studios, and was handled by Swift and Nathan Chapman. Written entirely by Swift as the follow-up to Fearless, Speak Now expands on the country pop style of her previous work, and features lyrical themes including love, romance and heartbreak. Speak Now debuted at number one on the U.S. Billboard 200 chart, giving Swift her second consecutive chart-topper in the U.S. Its first-week sales of 1,047,000 copies was the fifth-biggest debut in history for a female artist, the third biggest ever by a country album (the first being Swift's own Red album later released in 2012), the biggest in five and a half years, and the biggest first week sales of 2010.",
+        "artwork" : ["speaknow_ts.png"],
+        "albumAM": "https://itunes.apple.com/us/album/speak-now/399727924",
+        "albumSM": "https://open.spotify.com/album/5EpMjweRD573ASl7uNiHym"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "red",
+        "albumname" : "Red",
+        "summary": "Red is the fourth studio album by American singer-songwriter Taylor Swift. It was released on October 22, 2012, by Big Machine Records, as the follow-up to her third studio album, Speak Now. The album title was inspired by the semi-toxic relationships that Swift experienced during the process of conceiving this album, with Swift describing the emotions she felt as red emotions due to their intense and tumultuous nature. Red touches on Swift's signature themes of love and heartbreak, however, from a more mature perspective while exploring other themes such as fame and the pressure of being in the limelight. Worldwide, Red has sold 7 million copies as of December 2017. It was Swift's third consecutive top-selling album of the year in the United States, managing to be the second best-selling album of 2012 across all genres only two months after its release.",
+        "artwork" : ["red_ts.png"],
+        "albumAM": "https://itunes.apple.com/us/album/red/571445253",
+        "albumSM": "https://open.spotify.com/album/1EoDsNmgTLtmwe1BDAVxV5"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "1989",
+        "albumname" : "1989",
+        "summary": "1989 is the fifth studio album by American singer-songwriter Taylor Swift, released on October 27, 2014 through Big Machine Records. Swift began composing the album following the release of her previous studio effort, Red (2012). The album represents a departure from the country music of Swift's previous albums, and is described by the singer as her first documented official pop album. 1989 sold 1.287 million copies in the United States during its first week of release and debuted at number one on the Billboard 200 albums chart. It became the best-selling album of 2014 in the United States, with total sales of 6.11 million copies as of December 2017, while selling 10.1 million worldwide.",
+        "artwork" : ["1989_ts.png"],
+        "albumAM": "https://itunes.apple.com/us/album/1989/907242701",
+        "albumSM": "https://open.spotify.com/album/2QJmrSgbdM35R67eoGQo4j"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "reputation",
+        "albumname" : "Reputation",
+        "summary": "Reputation (stylized as reputation) is the sixth studio album by American singer and songwriter Taylor Swift. It was released on November 10, 2017, through Big Machine Records. The album has topped charts in Australia, Austria, Belgium, Canada, Ireland, the Netherlands, New Zealand, Norway, Scotland, Switzerland, the United Kingdom, and the United States. According to Nielsen SoundScan, Reputation moved 1.238 million album-equivalent units (1.216 million copies sold) in the United States during its first week of release, making it the country's best-selling album of 2017.",
+        "artwork" : ["reputation_ts.png"],
+        "albumAM": "https://itunes.apple.com/us/album/reputation/1274999981",
+        "albumSM": "https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "lover",
+        "albumname" : "Lover",
+        "summary": "Lover is the seventh studio album by American singer-songwriter Taylor Swift. It was released on August 23, 2019, through Republic Records, and is her first album release after her departure from Big Machine Records, which resulted in a highly publicized dispute. Swift recorded Lover with producers Jack Antonoff, Joel Little, Louis Bell, and Frank Dukes from November 2018 to February 2019 following her 2018 Reputation Stadium Tour, where she felt motivated by the fans, helping her recover her mental health after the controversies leading up to Reputation (2017). Swift conceived Lover as a 'love letter to love', taking inspiration from her recalibrated personal life and newfound artistic freedom.",
+        "artwork" : ["lover_ts.png"],
+        "albumAM": "https://music.apple.com/us/album/lover/1468058165",
+        "albumSM": "https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "folklore",
+        "albumname" : "Folklore",
+        "summary": "Folklore (stylized in all lowercase) is the eighth studio album by American singer-songwriter Taylor Swift. It was a surprise album, released on July 24, 2020, via Republic Records. After the outbreak of the COVID-19 pandemic in early 2020, Swift cancelled the concert tour for her seventh studio album Lover (2019). She conceived Folklore during quarantine as 'a collection of songs and stories that flowed like a stream of consciousness', working with producers Aaron Dessner and Jack Antonoff virtually; Dessner and Antonoff operated and recorded music from studios in Hudson Valley and New York City while Swift recorded her vocals in a studio constructed within her Los Angeles home.",
+        "artwork" : ["folklore_ts.png"],
+        "albumAM": "https://music.apple.com/us/album/lover/1468058165",
+        "albumSM": "https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "evermore",
+        "albumname" : "Evermore",
+        "summary": "Evermore (stylized in all lowercase) is the ninth studio album by American singer-songwriter Taylor Swift. It was a surprise album released on December 11, 2020, via Republic Records, less than five months after Folklore, her eighth studio album. Evermore was a spontaneous product of Swift's extended collaboration with her Folklore collaborator Aaron Dessner, mainly recorded at his Long Pond Studio in the Hudson Valley.",
+        "artwork" : ["evermore_ts.png"],
+        "albumAM": "https://music.apple.com/us/album/evermore/1544268281",
+        "albumSM": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+    },{
+        "name": "Taylor Swift",
+        "shortname": "midnights",
+        "albumname" : "Midnights",
+        "summary": "Midnights is the tenth studio album by American singer-songwriter Taylor Swift, released on October 21, 2022, via Republic Records. It was announced at the 2022 MTV Video Music Awards, marking Swift's first new body of work since her 2020 indie folk albums, Folklore and Evermore. A concept album about nocturnal ruminations, Midnights was written and produced by Swift with longtime collaborator Jack Antonoff.",
+        "artwork" : ["midnights_ts.png"],
+        "albumAM": "https://music.apple.com/us/album/midnight-rain/1645937249?i=1645937261",
+        "albumSM": "https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3"
+    }]
+    }
