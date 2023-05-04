@@ -14,9 +14,9 @@ app.set('view engine', 'ejs')
 //middleware to grab the index.js
 app.use(require('./routes/index'))
 
-// app.use(require('./routes/chat'))
+app.use(require('./routes/chat'))
 
-// app.use(require('./routes/feedback'))
+app.use(require('./routes/feedback'))
 
 app.use(require('./routes/speakers'))
 

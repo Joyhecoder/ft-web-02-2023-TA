@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <%- include ('partials/nav.ejs') %> 
+
+    <h1>Welcome to Forms Home Page</h1>
+
+    
+
+    <h3>Create a basic form and explore form elements</h3>
+
+    <form action="/" method="POST">
+        <input type="text" placeholder="First Name" name="firstName">
+       
+        <input type="radio" name="isValid">
+        <input type="checkbox" name="isStudent">
+        <input type="password" name="password">
+
+        <select name="days" id="">
+            <option value="Monday">This is Monday</option>
+            <option value="Tuesday">This is Tuesday</option>
+            <option value="Wednesday">This is Wednesday</option>
+        </select>
+
+        <input type="submit">
+
+        <button type="submit">Done</button>
+    </form>
+
+</body>
+
+</html>
