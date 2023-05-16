@@ -38,8 +38,15 @@ app.get('/', (req, res) => {
     //all of our visitors should be able to see the homepage
     res.send('home page')
 })
-app.get('/admin/dashboard', authLogin, (req, res) => {
+app.all('/admin/*', authLogin, (req, res, next) => {
+    next()
+})
+app.get('/admin/dashboard', (req, res) => {
     res.send('admin page')
+})
+
+app.get('/admin/users', (req, res) => {
+    res.send('admin users')
 })
 
 app.get('/login', (req, res) => {
@@ -59,6 +66,11 @@ app.post('/login', (req, res) => {
     }else{
         res.redirect('/login')
     }
+})
+
+app.get('/logout', (req, res) => {
+    res.session.username = null
+    res.redirect('/')
 })
 
 app.listen(PORT, () => {
