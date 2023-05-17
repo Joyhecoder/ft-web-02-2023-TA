@@ -53,12 +53,12 @@ const init = (passport) => {
     //add the user info to the session
     //user is going to come from the record passed from the done above
     //what are we puttin on the session?
-    passport.serializeUser((user, done)=>{
+    passport.serializeUser((user, done)=>{  //!this is the name that goes on passport.session.id on lecture.js clg
         console.log("inside serialize user")
         done(null, user.id) //second argument is what does on the session.id
     })
 
-    passport.deserializeUser(async (id, done)=>{
+    passport.deserializeUser(async (id, done)=>{  //!this is the user info that goes on req.user on lecture.js clg
         try {
             let foundUserInDBFromSessionID = await db.users.findByPk(id)
             if(foundUserInDBFromSessionID){
