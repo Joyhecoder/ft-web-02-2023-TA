@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    background-Color: teal;
+}
+   
+
+div {
+    color: wheat;
+}
+
+.paragraph {
+    font-size: 30px;
+    color: yellow;
+    font-weight: 100px;
+}
