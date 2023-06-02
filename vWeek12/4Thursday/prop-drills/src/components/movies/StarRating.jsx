@@ -13,8 +13,8 @@ const StarRating = () => {
   return (
     <>
      {movies.map(movie => {
-        console.log(movie)
-        console.log(movie.title)
+        // console.log(movie)
+        // console.log(movie.title)
      return <MovieCard title={movie.title} year={movie.releaseDate} rating={movie.rating} />})}
     </>
   )
