@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.randomEight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  height: 50vh;
+  width:100%;
+  background-color: pink;
+  display: flex;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background: yellow;
+}
+
+.shake{
+  animation: shakeAnimation 1s ease-in-out;
+}
+@keyframes shakeAnimation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
