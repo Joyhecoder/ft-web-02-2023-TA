@@ -1,15 +1,30 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import api from '../api'
+import MovieDetails from './MovieDetails'
 
 const Movies = ({allMovies}) => {
   const [id, setId] = useState('')
-
+  const [movieDetail, setMovieDetail] = useState({})
   const handleClick = (imdbID) => {
     setId(imdbID)
   }
-
+console.log(movieDetail)
   const fetchMovieDetails = async (id) => {
+    try {
+      let response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=${api}`)
+      let data = await response.json()
+      setMovieDetail(data)
+      
+    } catch (error) {
+      console.log(error)
+    }
     
   }
+
+  useEffect(() => {
+    fetchMovieDetails(id)
+  }, [id])
+  
   return (
     <>
       <h1 className="text-3xl font-bold underline font-mono">
@@ -34,7 +49,7 @@ const Movies = ({allMovies}) => {
         {allMovies.map(movie => {
           return (
             <div key={movie.imdbID} className="rounded overflow-hidden shadow-lg basis-1/4 mx-3 my-2" onClick={()=>handleClick(movie.imdbID)}>
-                <img class="w-full" src={movie.Poster} alt="Sunset in the mountains" />
+                <img className="w-full" src={movie.Poster} alt="Sunset in the mountains" />
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">{movie.Title}</div>
                 </div>
@@ -46,7 +61,15 @@ const Movies = ({allMovies}) => {
           )
         })}
       </div>
+
+      {/* movie detail section  */}
+      {movieDetail !== null ?
+       <MovieDetails details={movieDetail} />
+    :
+    <></>
+    }
       
+     
 
     </>
   )

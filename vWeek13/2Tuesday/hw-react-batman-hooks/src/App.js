@@ -8,7 +8,7 @@ import api from './api'
 const App = () => {
   const [movieData, setMovieData] = useState([])
 
-//https://www.omdbapi.com/?i=tt3896198&apikey=530572a3
+
 
   useEffect(() => {
    const initalFetchMovieData = async () => {
