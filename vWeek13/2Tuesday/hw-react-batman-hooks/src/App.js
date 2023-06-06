@@ -24,12 +24,12 @@ const App = () => {
     
    }
    initalFetchMovieData()
-   console.log(movieData)
+ 
   }, [])
   
   return (
     <>
-      <Movies allMovies = {movieData} />
+      <Movies key={1} allMovies = {movieData} />
     </>
   )
 }
