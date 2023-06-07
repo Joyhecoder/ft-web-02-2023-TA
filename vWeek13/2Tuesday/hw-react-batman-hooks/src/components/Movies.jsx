@@ -27,9 +27,9 @@ console.log(movieDetail)
   
   return (
     <>
-      <h1 className="text-3xl font-bold underline font-mono">
+      {/* <h1 className="text-3xl font-bold underline font-mono">
       Hello world!
-      </h1>
+      </h1> */}
  {/* navbar section */}
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-amber-300 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
