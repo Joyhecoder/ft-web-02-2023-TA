@@ -20,8 +20,15 @@
                 data: {
                     id: id,
                     firstName: firstName,
-                    city
+                    city: city
                 }
+            }
+        }
+
+        const removeContact = (id) => {
+            return {
+                type: "REMOVE_CONTACT",
+                id
             }
         }
 
@@ -31,8 +38,10 @@
         const reducer = (state, action) => {
             //action = {type, data}
             if(state === undefined){ //defines our initial gloabl state if the global state is undefined 
-                contacts: [],
-                count: 0
+                state = {
+                    contacts: [],
+                    count: 0
+                }
             }
 
             switch (action.type) {
@@ -42,6 +51,13 @@
                         contacts: state.contacts.concat(action.data),
                         count: state.count + 1
                     }
+
+                case "REMOVE_CONTACT":
+                    return {
+                        ...state,
+                        contacts: state.contacts.filter(contact => contact.id !== action.id),
+                        count: state.count - 1
+                    }
                     
                    
             
@@ -49,7 +65,16 @@
                    return state;
             }
         }
-        const store = Redux.createStore(***, )  //have to pass in a reducer here {}
+        const store = Redux.createStore(reducer )  //have to pass in a reducer here {}
+
+        const showState = () => {
+            console.log(store.getState())
+        }
+        store.subscribe(showState)
+        store.dispatch(addContact(1, "Joy", "Houston"))
+        store.dispatch(addContact(2, "kelly", "Cypress"))
+
+        store.dispatch(removeContact(2))
     </script>
   </body>
 </html>
