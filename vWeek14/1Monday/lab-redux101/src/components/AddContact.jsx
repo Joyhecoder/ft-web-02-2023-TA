@@ -40,6 +40,7 @@ const AddContact = () => {
                 <li>
                     <h1>{contact.firstName}</h1>
                     <span>{contact.city}</span>
+                    <button onClick={()=> dispatch(removeContact(contact.id))}>Remove Contact</button>
                 </li>
             )
         })}

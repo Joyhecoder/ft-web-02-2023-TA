@@ -20,6 +20,13 @@ const reducer = (state, action) => {
             }
            
     
+        case "REMOVE_CONTACT":
+            return{
+                ...state,
+                contacts: state.contacts.filter(contact => contact.id !== action.id)
+            }
+           
+    
         default:
             return state;
     }
