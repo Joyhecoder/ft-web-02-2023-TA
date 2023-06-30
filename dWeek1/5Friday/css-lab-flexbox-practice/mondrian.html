@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian with Flexbox</title>
+    <style>
+        .container {
+            background-color: grey;
+            width: 100vw;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+        }
+        .col {
+            border: black solid 1px;
+            width: 19vw;
+            height: 100vh;
+        }
+
+        /* first column */
+        .double {
+            display: flex;
+        }
+        .yellow {
+            background-color: yellow;
+            height: 40vh;
+            width: 50%;
+            border: black solid 1px;
+        }
+        .white {
+            background-color: white;
+            height: 40vh;
+            width: 50%;
+            border: black solid 1px;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            background-color: pink;
+            height: 60vh;
+        }
+
+        .single-thicker {
+            background: white;
+            width: auto;
+            flex: 1;
+            border: black solid 1px;
+           
+        }
+        .single-thicker-red {
+            background: red;
+            width: auto;
+            flex: 1;
+            border: black solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="double">
+                <div class="yellow"></div>
+                <div class="white"></div>
+            </div>
+            <div class="flex">
+                <div class="single-thicker"></div>
+                <div class="single-thicker-red"></div>
+                <div class="single-thicker"></div>
+            </div>
+            
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</body>
+</html>

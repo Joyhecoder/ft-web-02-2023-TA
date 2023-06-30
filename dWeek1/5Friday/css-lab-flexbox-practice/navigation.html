@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar with Flexbox</title>
+    <style>
+        .navBar{
+            background-color: rgb(11, 192, 209);
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .companyName {
+            color: white;
+            font-weight: bolder;
+            /* background-color: red; */
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sideBar {
+            /* background: tomato; */
+            width: 50vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <div class="companyName">
+            Company Name
+        </div>
+        <div class="sideBar">
+            <div class="content">Home</div>
+            <div class="content">Products</div>
+            <div class="content">About</div>
+            <div class="content">Careers</div>
+            <div class="content">Contact</div>
+        </div>
+    </div>
+</body>
+</html>
