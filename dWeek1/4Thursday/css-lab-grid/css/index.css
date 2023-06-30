@@ -76,7 +76,8 @@ img {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
 }
 
 .sidebar {
@@ -86,7 +87,7 @@ img {
 
 .main-content {
     grid-column: 2 / span 4;
-    grid-row: 1 / span 1;
+    grid-row: 1;
 }
 
 .subcontent-1 {
