@@ -56,10 +56,72 @@
             flex: 1;
             border: black solid 1px;
         }
+
+        /* second column */
+        .col2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .even-part {
+            border: black solid 1px;
+            flex: 1;
+
+        }
+        .white-entire {
+            background-color: white;
+        }
+        .yellow-entire {
+            background-color: yellow;
+        }
+        .black2 {
+            background-color: black;
+            width: 50%;
+            border: black solid 1px;
+        }
+        .white2 {
+            background-color: white;
+            width: 50%;
+            border: black solid 1px;
+        }
+
+        /* third column */
+        .yellow3 {
+            background-color: yellow;
+            border: black solid 1px;
+            height: 12.5vh;
+            width: auto;
+            
+        }
+        .white3 {
+            background-color: white;
+            border: black solid 1px;
+            height: 12.5vh;
+            width: auto;
+            display: flex;
+        }
+        .small-white-3{
+            flex-grow: 1;
+            border: black solid 1px;
+        }
+        .flex3 {
+            display: flex;
+            flex-direction: column;
+        }
+        .blue3 {
+            background-color: blue;
+            border: black solid 1px;
+            height: 24vh;
+        }
+        .red3 {
+            background-color: red;
+            border: black solid 1px;
+            height: 24vh;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- first column -->
         <div class="col">
             <div class="double">
                 <div class="yellow"></div>
@@ -70,10 +132,33 @@
                 <div class="single-thicker-red"></div>
                 <div class="single-thicker"></div>
             </div>
-            
         </div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <!-- second column -->
+        <div class="col col2">
+            <div class="even-part white-entire"></div>
+            <div class="even-part double">
+                <div class="black2"></div>
+                <div class="white2"></div>
+            </div>
+            <div class="even-part yellow-entire"></div>
+            <div class="even-part white-entire"></div>
+        </div>
+        <!-- third column -->
+        <div class="col">
+            <div class="even-part flex3">
+                <div class="yellow3"></div>
+                <div class="yellow3"></div>
+            </div>
+            <div class="even-part">
+                <div class="white3">
+                    <div class="small-white-3"></div>
+                    <div class="small-white-3"></div>
+                </div>
+                <div class="white3"></div>
+            </div>
+            <div class="even-part blue3"></div>
+            <div class="even-part red3"></div>
+        </div>
         <div class="col"></div>
         <div class="col"></div>
     </div>
