@@ -242,4 +242,19 @@ const printTree = (x) => {
     }
     
 }
-printTree(8)
+// printTree(8)
+
+// console.log("This is a log message to stdout");
+// console.error("This is a log message to stderr");
+
+
+
+// const x = 2
+// let y = 4
+// function update(arg){
+//     return Math.random() + y * arg
+// }
+// y =2
+// Math.random = () => 2.5
+// const result = update(x)
+// console.log(`result: ${result}`)
